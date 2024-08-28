@@ -1,5 +1,7 @@
 # Rich Text Editor with Slate.js and React js
 
+[LIVE DEMO](https://rich-text-react-demo.vercel.app/)
+
 This is a simple rich text editor built with React and Slate.js. It allows users to format text, create headings, lists, and more. The content is automatically saved to `localStorage` and can be viewed in a read-only mode.
 
 ## Features
