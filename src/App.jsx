@@ -6,10 +6,15 @@ function App() {
 	return (
 		<div className='container'>
 			<div>
-				<button className='button-github'>
+				<a
+					className='button-github'
+					target='_blank'
+					rel='noopener noreferrer'
+					href='https://github.com/EstebanPerez99/rich_text_react_demo'
+				>
 					<Icons name='github' style={{ fontSize: "1.2rem" }} />
-					<a>View on GitHub</a>
-				</button>
+					<p>View on GitHub</p>
+				</a>
 			</div>
 			<header>
 				<div className='header-section'>

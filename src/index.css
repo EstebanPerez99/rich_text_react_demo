@@ -120,7 +120,7 @@ header {
 .button-github {
 	background: black;
 	color: white;
-	padding: 8px 10px;
+	padding: 0 14px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -129,6 +129,7 @@ header {
 	border-radius: 5px;
 	margin-top: 2rem;
 	transition: all 0.7s;
+	max-width: fit-content;
 }
 .button-github:hover {
 	background: rgb(7, 27, 58);
