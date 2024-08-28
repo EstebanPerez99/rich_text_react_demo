@@ -1,8 +1,17 @@
-# React + Vite
+# Rich Text Editor with Slate.js and React js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple rich text editor built with React and Slate.js. It allows users to format text, create headings, lists, and more. The content is automatically saved to `localStorage` and can be viewed in a read-only mode.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Text formatting (bold, italic, underline)
+- Headings and lists
+- Auto-save to `localStorage`
+- Read-only content preview
+
+## Usage
+
+- **Edit**: Modify content in the editor, changes are auto-saved.
+- **Preview**: View saved content in read-only mode.
+
+Created by [Esteban](https://x.com/estebanpm__)
