@@ -3,6 +3,7 @@ import { createEditor, Editor, Node, Transforms } from "slate";
 import { Slate, Editable, withReact } from "slate-react";
 import RenderElement from "./RenderElement";
 import RenderLeaf from "./RenderLeaf";
+import { richtextInitialValue } from "./RichText";
 
 const useLocalStorageListener = (key, callback) => {
 	useEffect(() => {
@@ -20,9 +21,7 @@ const useLocalStorageListener = (key, callback) => {
 
 const RichTextVisualizer = () => {
 	const [content, setContent] = useState(
-		JSON.parse(localStorage.getItem("content")) || [
-			{ type: "paragraph", children: [{ text: "No content available." }] },
-		]
+		JSON.parse(localStorage.getItem("content")) || richtextInitialValue
 	);
 
 	useLocalStorageListener("content", (newContent) => {
@@ -68,7 +67,7 @@ const RichTextVisualizer = () => {
 				renderElement={renderElement}
 				renderLeaf={renderLeaf}
 				readOnly
-				placeholder='No content available'
+				placeholder='-'
 			/>
 		</Slate>
 	);
