@@ -37,28 +37,35 @@ blockquote {
 
 .editor-styling {
 	padding: 12px 15px;
-	border: solid #002643 1px;
-	border-radius: 0 0 6px 6px;
+	border: solid #5979a2 1px !important;
+	border-radius: 10px;
 }
 .editor-styling p {
 	margin: 0;
 	line-height: 1.4rem;
 }
 .editor-toolbar {
-	background-color: #00477d;
-	border-radius: 6px 6px 0 0;
-	padding: 7px 10px;
+	background-color: #edf2fa;
+	border-radius: 99px;
+	padding: 7px 16px;
 	display: flex;
 	gap: 5px;
+	margin-bottom: 10px;
 }
 .editor-button {
 	border-radius: 5px;
-	padding: 4px 6px;
-	color: white;
+	padding: 8px;
+	color: #333;
 	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .editor-button:hover {
-	background-color: #1066a7;
+	background-color: #d2e1f5;
+}
+.editor-button.active {
+	background-color: #d2e1f5;
 }
 
 header {
@@ -92,6 +99,7 @@ header {
 }
 .subtitle a {
 	color: white;
+	text-decoration: none;
 }
 
 .preview {
@@ -130,6 +138,7 @@ header {
 	margin-top: 2rem;
 	transition: all 0.7s;
 	max-width: fit-content;
+	text-decoration: none;
 }
 .button-github:hover {
 	background: rgb(7, 27, 58);

@@ -154,16 +154,15 @@ const BlockButton = ({ format, icon }) => {
 	const editor = useSlate();
 	return (
 		<button
-			className='editor-button'
-			style={
+			className={`editor-button ${
 				isBlockActive(
 					editor,
 					format,
 					TEXT_ALIGN_TYPES.includes(format) ? "align" : "type"
 				)
-					? { border: "solid black 1px" }
-					: { border: "solid gray 1px" }
-			}
+					? "active"
+					: ""
+			}`}
 			onMouseDown={(event) => {
 				event.preventDefault();
 				toggleBlock(editor, format);
@@ -178,12 +177,9 @@ const MarkButton = ({ format, icon }) => {
 	const editor = useSlate();
 	return (
 		<button
-			className='editor-button'
-			style={
-				isMarkActive(editor, format)
-					? { border: "solid black 1px" }
-					: { border: "solid gray 1px" }
-			}
+			className={`editor-button ${
+				isMarkActive(editor, format) ? "active" : ""
+			}`}
 			onMouseDown={(event) => {
 				event.preventDefault();
 				toggleMark(editor, format);
